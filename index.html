@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="zh-TW"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-id="th-modified">DEVGRU | NAVAL SPECIAL WARFARE DEVELOPMENT GROUP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --container-bg: #1f2833;
+            --text-color: #ffffff;
+            --text-muted: #c5a059; /* 戰術金色 */
+            --action-color: #66fcf1; /* 夜視鏡/高科技極光藍 */
+            --danger-color: #ff3333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        .mono {
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        /* 頂部機密橫條 */
+        .classified-bar {
+            background-color: var(--danger-color);
+            color: #000;
+            text-align: center;
+            font-weight: bold;
+            padding: 5px 0;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        /* 頂部主視覺 */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, rgba(11,12,16,0.6) 0%, rgba(11,12,16,1) 100%), 
+                        url('https://images.unsplash.com/photo-1508873696983-2df5199e4009?q=80&w=1200') no-repeat center center/cover; /* 預設軍事風背景，可換成你的 Roblox 截圖 */
+            border-bottom: 1px solid var(--container-bg);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--action-color);
+            margin-bottom: 30px;
+        }
+
+        /* 按鈕樣式 */
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 2px solid var(--action-color);
+            color: var(--action-color);
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--action-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 15px var(--action-color);
+        }
+
+        /* 主體內容容器 */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h2 {
+            border-left: 4px solid var(--action-color);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+        }
+
+        /* 中隊架構卡片 */
+        .squadron-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .squadron-card {
+            background-color: var(--container-bg);
+            border: 1px solid #334155;
+            padding: 20px;
+            border-radius: 4px;
+            transition: transform 0.2s;
+        }
+
+        .squadron-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--action-color);
+        }
+
+        .squadron-card h3 {
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        /* 規則清單 */
+        .rules-list {
+            list-style: none;
+        }
+
+        .rules-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .rules-list li::before {
+            content: "[✓]";
+            position: absolute;
+            left: 0;
+            color: var(--action-color);
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        /* 宣告引言 */
+        .quote-box {
+            background-color: rgba(31, 40, 51, 0.4);
+            border-left: 4px solid var(--text-muted);
+            padding: 20px;
+            font-style: italic;
+            margin: 30px 0;
+        }
+
+        footer {
+            text-align: center;
+            color: #555;
+            font-size: 12px;
+            margin-top: 80px;
+            border-top: 1px solid #222;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="classified-bar mono   ablefocused">Join Us Now!</div>
+
+    <header class="hero">
+        <h1 class="mono">NAVAL SPECIAL WARFARE DEVELOPMENT GROUP</h1>
+        <p class="mono">[ DEVGRU / SEAL TEAM 6 ]</p>
+        <div class="btn-group mono">
+            <a href="https://discord.gg/qTNMedagmJ" target="_blank" class="btn">ACCESS DISCORD</a>
+            <a href="https://www.roblox.com/communities/34488214/JSOC-1st-SFOD-Delta#!/about" target="_blank" class="btn">ROBLOX GROUP</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2 class="mono">// MISSION OBJECTIVE / 核心使命</h2>
+            <p>DEVGRU 是一支隸屬於美軍聯合特種作戰司令部（JSOC）的頂尖 Tier 1 特種部隊。在 Roblox MilSim 的戰場中，我們專注於高難度反恐、人質營救、敵後偵察與斬首行動。我們不追求人數，我們只追求極致的戰術素養、鋼鐵般的紀律與完美的團隊默契。</p>
+            <div class="quote-box">
+                「在戰場上，平庸即是死罪。我們只要最頂尖的 1%，其餘免談。」
+            </div>
+        </section>
+
+        <section>
+            <h2 class="mono">// ORDER OF BATTLE / 中隊編制</h2>
+            <div class="squadron-grid">
+                <div class="squadron-card">
+                    <h3 class="mono" style="color: #ffd700;">Gold Squadron</h3>
+                    <p style="font-size: 14px; color: #aaa;">金衣中隊。突擊主力，負責正面攻堅、反恐（CT）作戰與高難度人質營救任務。</p>
+                </div>
+                <div class="squadron-card">
+                    <h3 class="mono" style="color: #5d9cec;">Blue Squadron</h3>
+                    <p style="font-size: 14px; color: #aaa;">藍衣中隊。擅長海上攔截（VBSS）、登船奪控以及各類熱點區域的快速突擊部署。</p>
+                </div>
+                <div class="squadron-card">
+                    <h3 class="mono" style="color: #967adc;">Black Squadron</h3>
+                    <p style="font-size: 14px; color: #aaa;">黑衣中隊。情報與監視。負責戰區前哨滲透、遠程狙擊觀測與機密情報蒐集（需獨立選拔）。</p>
+                </div>
+                <div class="squadron-card">
+                    <h3 class="mono" style="color: #aab2bd;">Gray Squadron</h3>
+                    <p style="font-size: 14px; color: #aaa;">灰衣中隊。戰術載具與航空支援。負責全隊的滲透、空中/水面火力壓制與安全撤離。</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="mono">// ENLISTMENT RULES / 入伍守則</h2>
+            <ul class="rules-list">
+                <li><strong>通訊設備：</strong> 必須擁有清晰、無雜音的麥克風，且在行動中必須服從語音調度。</li>
+                <li><strong>絕對服從：</strong> 官方演習與作戰行動中，對長官（High Ranks）的戰術指揮擁有 100% 的執行力。</li>
+                <li class=""><strong>選拔淘汰制：</strong> 所有新兵入伍一律為 Candidate，必須通過 BUD/S 基礎訓練與 OTC 進階選拔，未通過者一律淘汰。</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p class="mono   ablefocused">© 2026 US:RP DEVGRU MIL-SIM. FOR ROBLOX COMMUNITY PURPOSES ONLY.</p>
+        </footer>
+    </div>
+
+</body></html>
